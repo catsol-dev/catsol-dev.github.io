@@ -1,0 +1,338 @@
+@import url(https://unpkg.com/normalize.css@8.0.1/normalize.css);
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+html {
+    font-size: 11px;
+    font-family: 'Inter', sans-serif;
+    color: #ddd;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #24242f;
+    background-image: url(./airport.jpg);
+    font-size: 2rem;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.9rem;
+}
+
+h5 {
+    font-size: 2.6rem;
+}
+
+h6 {
+    font-size: 2.3rem;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+    border: 1px solid #bbb;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+hr {
+    color: #bbb;
+}
+
+.subpage h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+
+.location {
+    display: none;
+}
+
+.round-slight {
+    border-radius: 8px;
+}
+
+.round-medium {
+    border-radius: 25px;
+}
+
+.round-high {
+    border-radius: 50px;
+}
+
+.round-circular {
+    border-radius: 50%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.c1-12 {
+    width: calc(100% / 12);
+}
+.c2-12 {
+    width: calc(100% / 6);
+}
+.c3-12 {
+    width: 25%;
+}
+.c4-12 {
+    width: calc(100% / 3);
+}
+.c5-12 {
+    width: calc (100% / 2.4);
+}
+.c6-12 {
+    width: 50%;
+}
+.c7-12 {
+    width: calc(100% * 7 / 12);
+}
+.c8-12 {
+    width: calc(100% / 1.5);
+}
+.c9-12 {
+    width: 75%;
+}
+.c10-12 {
+    width: calc(100% / 1.2);
+}
+.c11-12 {
+    width: calc(100% * 11 / 12);
+}
+.c12-12 {
+    width: 100%;
+}
+
+div[class*="-12"] {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #282834;
+    padding: 30px;
+    overflow: scroll;
+    flex: 1;
+}
+
+.inflexible {
+    flex: 0 0 auto;
+}
+
+.growable {
+    flex-grow: 1;
+}
+
+.shrinkable {
+    flex-shrink: 1;
+}
+
+.flexible {
+    flex: 1 1 auto;
+}
+
+#header {
+    background-image: url(./roadtrip.jpg);
+    background-position: center;
+    padding: 30px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2%;
+    border-bottom: 2px solid #20202a;
+}
+
+#header h1,h4 {
+    display: block;
+    background-color: #30303a;
+    padding: 10px;
+    width: max-content;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#navbar {
+    background-color: #24242f;
+    height: calc(4vh + 20px);
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.7rem;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+    flex: 1 0 auto;
+}
+
+#navbar-left {
+    display: flex;
+    overflow: hidden;
+    height: calc(4vh + 20px);
+    text-align: center;
+    flex-direction: row;
+    flex: 1;
+}
+
+#navbar-right {
+    display: flex;
+    overflow: hidden;
+    height: calc(4vh + 20px);
+    text-align: center;
+    flex-direction: row-reverse;
+    flex: 1;
+}
+
+.navbar-item {
+    display: inline-block;
+    height: calc(4vh + 20px);
+    margin: 0px 0px 0px 0px;
+    flex: 1;
+}
+
+#navbar-left .navbar-item {
+    border-right: 1px solid #777;
+}
+
+#navbar-right .navbar-item {
+    border-left: 1px solid #777;
+}
+#navbar-left a {
+    color: #bbb;
+    text-decoration: none;
+    background-color: #262632;
+    cursor: pointer;
+}
+
+#navbar-left a:hover {
+    background-color: #282834;
+}
+#navbar-right a {
+    color: #bbb;
+    text-decoration: none;
+    background-color: #262632;
+    cursor: pointer;
+}
+
+#navbar-right a:hover {
+    background-color: #282834;
+}
+
+.navicon {
+    width: 4vh;
+}
+
+#main {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bbb;
+}
+
+.subpage {
+    display: none;
+    border: 1px solid #888;
+}
+
+#footer {
+    background-color: #15151f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.footer-alt {
+    padding: 20px 10%;
+}
+
+button {
+    display: block;
+    margin: auto;
+    font-size: 2.5rem;
+    padding: 20px;
+    color: #ddd;
+    background-color: #30303a;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-top: 2%;
+    cursor: pointer;
+    flex: 1;
+    width: 35%;
+}
+
+.darkred-bg {
+    background-color: #e22e2f;
+}
+
+.lightred-bg {
+    background-color: #f03e3f;
+}
+
+.lightgreen-bg {
+    background-color: #2ac85e;
+}
+
+.darkgreen-bg {
+    background-color: #1fa547;
+}
+
+.darkred {
+    color: #e22e2f;
+}
+
+.lightred {
+    color: #f03e3f;
+}
+
+.lightgreen {
+    color: #2ac85e;
+}
+
+.darkred {
+    color: #1fa547;
+}
+
+table {
+    text-align: center;
+}
+
+thead {
+    font-weight: bold;
+}
+
+thead td {
+    border-bottom: 2px solid #777;
+}
+
+tbody {
+    border-bottom: 1px solid #999;
+}
+
+

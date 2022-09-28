@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Road Trip Project</h1>
+            <h4>By Claire Hepperlen</h4>
+        </div>
+        <main id="main" class="container round-slight">
+            <div class="subpage container round-slight">
+                <h1>Travel</h1>
+                <hr>
+                <h2>Map</h2>
+                <div class="row">
+                    <img src="map.jpg">
+                </div>
+                <h2>Destinations</h2>
+                <div id="locations">
+                    <div class="location container">
+                        <h3>Amsterdam, the Netherlands | 52.22° N, 4.54° E</h3>
+                        <h5>Starting Point</h5>
+                        <p>The place where we will be beginning our journey is in Amsterdam, the largest city in the Netherlands. Interestingly enough, even though Amsterdam is the largest city and capital, the national government is actually located in The Hague. Off we go, southeast to Zürich!</p>
+                    </div>
+                    <div class="location container">
+                        <h3>Zürich, Switzerland</h3>
+                        <h5>Stop 1</h5>
+                        <p>The first stop of this trip will be in the beautiful city of Zürich, Switzerland, yet another largest city that isn’t a capital. Great opportunity to take in some breathtaking Swiss scenery. Once done with that, 'tis time to hit the high-speed rail and head southeast again to Athens!</p>
+                    </div>
+                    <div class="location container">
+                        <h3>Athens, Greece</h3>
+                        <h5>Stop 2</h5>
+                        <p>In Athens, Greece we have our first largest city which is also the capital! Athens is quite the ancient city, so there is much to see while here. After seeing the several millenia of architecture, the next step is to get a cab and go southeast yet again to somewhere with a REAL mode of travel.</p>
+                    </div>
+                    <div class="location container">
+                        <h3>Athens International Airport</h3>
+                        <h5>Stop 3</h5>
+                        <p>Here we run into a dilemma on travel methods. Ground would take us through countries not exactly safe either due to war, authoritarian regimes, or both. Sea would be slow, considering the distance. Thus we will be going to the Athens International Airport and flying far (you'll never guess the direction) southeast to Thailand!</p>
+                    </div>
+                    <div class="location container">
+                        <h3>Bangkok, Thailand | 13.45° N, 100.29° E</h3>
+                        <h5>Ending Point</h5>
+                        <p>Bangkok is quite the city to say the least. It is the largest city in Thailand by orders of magnitude, the capital, and naturally the economic center of Thailand. The streets are strong here, with many relying on street vendors for their basic necessities.</p>
+                    </div>
+                    <button onclick="nextLoc()" id="locationbutton">Next</button>
+                </div>
+            </div>
+            <div class="subpage container round-slight">
+                <h1>Environment</h1>
+                <h2>Amsterdam</h2>
+                <p>Amsterdam is heavily influenced by its proximity to the ocean and origin as a dam for a river, which is where the name is from. It has a nice, mild oceanic climate with frequent cloudy days. Boat-accessible canals run throughout the city and lead out into open waters. The coolest thing besides the weather is the nearby manmade forest, with the animals and lush greenery of the region within.</p>
+                <h2>Bangkok</h2>
+                <p>Bangkok is far to the southeast and also located on a river, though is at a delta a good way inland from the gulf. Its tropical weather is far warmer than that of Amsterdam, though also wetter. As the original land around Bangkok was a swamp, the ground is composed mostly of a soft clay. This clay presents challenges for urban development, as structures sink into it slowly. A bit more of an issue is that of flooding, which Bangkok is quite prone to due to poor planning and low elevation, often below sea level.</p>
+            </div>
+            <div class="subpage container round-slight">
+                <h1>Culture</h1>
+                <h2>Linguistics</h2>
+                <p>In Thailand, the predominantly spoken language is Thai. Some useful translations to know are:</p>
+                <table>
+                    <thead>
+                        <td>English</td>
+                        <td>Thai</td>
+                    </thead>
+                    <tr>
+                        <td>Hello</td>
+                        <td>sa wat dii</td>
+                    </tr>
+                    <tr>
+                        <td>Goodbye</td>
+                        <td>sa wat dii (Same as hello!)</td>
+                    </tr>
+                    <tr>
+                        <td>I don't understand</td>
+                        <td>mai khao jai</td>
+                    </tr>
+                    <tr>
+                        <td>Do you speak English?</td>
+                        <td>puut pasaa angrit dai mai?</td>
+                    </tr>
+                </table>
+                <h2>Economics</h2>
+                <p>The primary currency of Thailand is the Thai Baht. Its exchange rate in the format of THB:USD is ~36.96:1</p>
+                <h2>Entertainment</h2>
+                <h3>Music</h3>
+                <p>Music has an interesting history in Thailand, with jazz being quite popular to the point of former King Bhumibol Adulyadej being a jazz musician and composer. Another genre popular with the upper classes in particular is the combination of western classical and Thai music known as luk grung.</p>
+                <h3>Sportsball</h3>
+                <p>Football (soccer) is a fairly popular sport, with there being a pretty good Thai national team. Unfortunately, Thailand is tainted with the bourgeois scourge known as normal golf. There are a lot of respectable courses around the country.</p>
+                <h2>Food</h2>
+                <p>Thai cuisine is quite a sight to behold and a pain (in the fun spicy way) to eat. Popular dishes include:</p>
+                <ul>
+                    <li>A Thai dish known around the world and beloved by many is pad thai. It consists typically of rice noodles, shrimp, peanuts, scrambled egg, and any array of vegetables, made in a stir-fry.</li>
+                    <li>Another dish is khao phat, a type of fried rice made with jasmine rice and often some form of meat, egg, onions, garlic, and less commonly tomatoes. Often seasoned with all sorts of amazing things.</li>
+                    <li>Khao soi is a soup adjacent dish made with a curry-like sauce containing coconut milk, a combination of both deep fried and boiled egg noodles, pickled mustard greens, lime, shallots, and fried ground chilies of course.</li>
+                </ul>
+                <p>These dishes can often be found at the ever-present street vendors, with very good pricing especially for what you get.</p>
+                <h2>Religion</h2>
+                <p>The <i>vast</i> majority of the Thai people practice Theravada Buddhism. The next largest religion is Islam, with less than 10% of the population practicing it.</p>
+                <h2>Important Customs</h2>
+                <p>Feet are not looked upon particularly well by the Thai people. Do not do any of the following with your feet:</p>
+                <ul>
+                    <li>Point any part of them at someone.</li>
+                    <li>Show anyone your sole.</li>
+                    <li>Put them on furniture.</li>
+                    <li>Move anything with them.</li>
+                </ul>
+                <p>In contrast to feet being looked on with disdain, the head is considered sacred, and you shouldn't touch or pass anything over people's heads. Unrelated,it is good to pass and receive objects using your right hand, and as in America it is rude to point at people, especially with your index finger.</p>
+                <h2>Events</h2>
+                <p>Bangkok has quite a few events, though recently official pride parades have been held and will allegedly continue to be held. It does definitely sound interesting and fun to attend pride events outside of the context of western culture.</p>
+            </div>
+            <div class="subpage container round-slight">
+                <h1>Regions</h1>
+                <p>Throughout this trip, several types of borders were crossed.</p>
+                <h2>Formal Regions</h2>
+                <p>Several different country borders were crossed, and inside those countries various subregions such as provinces and cantons.</p>
+                <h2>Functional Regions</h2>
+                <p>Thailand is <i>heavily</i> focused around Bangkok, as you move away from it development drastically decreases. Economic activity decreases, variety of professions massively decreases, etc.</p>
+                <h2>Perceptual Regions</h2>
+                <p>As the trip progressed, several perceptual regions were encountered.</p>
+                <ul>
+                    <li>Western Europe</li>
+                    <li>Central Europe</li>
+                    <li>Southeast Europe</li>
+                    <li>Southeast Asia</li>
+                </ul>
+            </div>
+            <button id="nextPage" onclick="nextSubpage()">Next</button>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>
+    
